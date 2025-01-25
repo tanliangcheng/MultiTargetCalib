@@ -1,0 +1,27 @@
+opt_intr: true
+init_intrinsic_from_config: false
+MIN_CORNERS: 8
+huber_thresh: 4.0
+stop_thresh: 1e-8
+cam_num: 2
+cam:
+  cam0:
+    cam_type: kb4
+    image_width: 512
+    image_height: 512
+    camera_intrinsic: [190, 190, 250, 250] #[fx,fy,cx,cy]
+  cam1:
+    cam_type: kb4
+    image_width: 512
+    image_height: 512
+    camera_intrinsic: [190, 190, 250, 250] #[fx,fy,cx,cy]
+
+target_num: 1
+target_type: apriltag
+target:
+  target0:
+    tagCols: 6
+    tagRows: 6
+    tagSize: 0.088
+    tagSpacing: 0.3
+    tagIdStart: 0

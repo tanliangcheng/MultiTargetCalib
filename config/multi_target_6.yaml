@@ -1,0 +1,57 @@
+opt_intr: false
+init_intrinsic_from_config: true
+MIN_CORNERS: 8
+huber_thresh: 4.0
+stop_thresh: 1e-10
+cam_num: 2
+cam:
+  cam0:
+    cam_type: pinhole
+    image_width: 752
+    image_height: 480
+    camera_intrinsic: [460, 460, 370, 250] #[fx,fy,cx,cy]
+  cam1:
+    cam_type: pinhole
+    image_width: 752
+    image_height: 480
+    camera_intrinsic: [460, 460, 370, 250]
+
+target_num: 6
+target_type: apriltag
+target:
+  target0:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 0
+  target1:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 80
+  target2:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 160
+  target3:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 240
+  target4:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 320
+  target5:
+    tagCols: 8
+    tagRows: 10
+    tagSize: 0.075
+    tagSpacing: 0.2
+    tagIdStart: 400
